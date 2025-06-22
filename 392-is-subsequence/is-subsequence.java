@@ -10,7 +10,6 @@ class Solution {
             tin++;
         }
 
-        // If we have traversed all characters in s, it is a subsequence of t
         return sin == s.length();
     }
 }
