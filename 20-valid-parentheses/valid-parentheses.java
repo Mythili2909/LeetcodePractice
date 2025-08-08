@@ -5,7 +5,7 @@ class Solution {
 
         for(char c:arr)
         {
-            if(c=='(' || c=='{' || c=='[')
+            if(c=='('||c=='{'||c=='[')
             {
                 stack.push(c);
             }
@@ -13,15 +13,15 @@ class Solution {
             {
                 stack.pop();
             }
-            else if(c=='}' && !stack.isEmpty() && stack.peek()=='{')
-            {
-                stack.pop();
-            }
             else if(c==']' && !stack.isEmpty() && stack.peek()=='[')
             {
                 stack.pop();
             }
-            else
+            else if(c=='}' && !stack.isEmpty() && stack.peek()=='{')
+            {
+                stack.pop();
+            }
+            else 
             {
                 return false;
             }
