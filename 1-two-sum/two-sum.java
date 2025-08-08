@@ -11,8 +11,9 @@ class Solution {
                 res[0]=i;
                 res[1]=map.get(target-nums[i]);
             }
-            
+            if(!map.containsKey(nums[i])){
             map.put(nums[i], i);
+            }
         }
         return res;
     }
