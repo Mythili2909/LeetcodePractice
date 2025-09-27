@@ -3,8 +3,6 @@ class Solution {
 
     public int longestZigZag(TreeNode root) {
         if (root == null) return 0;
-
-        // Start DFS from root, -1 to indicate the root doesn't have a direction
         dfs(root, true, 0);
         dfs(root, false, 0);
         
