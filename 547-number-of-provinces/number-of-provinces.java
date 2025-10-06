@@ -22,7 +22,7 @@ class Solution {
 
         while (!q.isEmpty()) {
             int node = q.poll();
-            for (int j = 0; j < grid.length; j++) {  // ✅ Fixed this line: changed ',' to ';'
+            for (int j = 0; j < grid.length; j++) {  
                 if (grid[node][j] == 1 && !vis[j]) {
                     q.add(j);
                     vis[j] = true;
